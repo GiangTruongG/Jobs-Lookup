@@ -1,0 +1,21 @@
+{
+  "expo": {
+    "scheme": "acme",
+    "web": {
+      "bundler": "metro"
+    },
+    "name": "React_native_job",
+    "slug": "React_native_job",
+    "extra": {
+      "eas": {
+        "projectId": "81eb628e-d828-4b2f-a692-30ffc4eaf845"
+      }
+    },
+    "android": {
+      "package": "com.truonggiang66866.React_native_job"
+    },
+    "ios": {
+      "bundleIdentifier": "truonggiang96"
+    }
+  }
+}
