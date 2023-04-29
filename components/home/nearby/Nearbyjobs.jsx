@@ -25,7 +25,7 @@ const Nearbyjobs = () => {
       <View styles={styles.cardsContainer}>
         {isLoading ? (
           <ActivityIndicator size='large' colors={COLORS.primary} />
-        ) : error ? (
+        ) : error ? ( // Extract this nested ternary operation into an independent statement.sonarlint(javascript:S3358)
           <Text>Something went wrong</Text>
         ) : (
           data?.map((job) => (

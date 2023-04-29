@@ -29,7 +29,7 @@ const Tabs = ({ tabs, activeTab, setActiveTab }) => {
         )}
         horizontal
         showsHorizontalScrollIndicator={false}
-        keyExtractor={item => item}
+        keyExtractor={item => item} // Should be item only?
         contentContainerStyle={{ columnGap: SIZES.small / 2 }}
       />
     </View>

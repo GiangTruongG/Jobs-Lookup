@@ -3,7 +3,7 @@ import { View, Text, Image } from 'react-native'
 
 import styles from './company.style';
 import { icons } from '../../../constants';
-import { checkImageURL, checkImageUrl } from '../../../utils';
+import { checkImageURL, checkImageUrl } from '../../../utils'; // Should checkImageUrl be removed?
 
 const Company = ({ companyLogo, jobTitle, companyName, location }) => {
   return (

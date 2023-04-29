@@ -6,6 +6,8 @@ const useFetch = (endpoint, query) => {
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState(null);
 
+    // Please remove API key here. 
+    // URL should be moved to .env file and read by process.env variable
     const options = {
         method: 'GET',
         url: `https://jsearch.p.rapidapi.com/${endpoint}`,
@@ -18,7 +20,8 @@ const useFetch = (endpoint, query) => {
 
     const fetchData = async () => {
         setIsLoading(true);
-
+        
+        // Good implemetation
         try {
             const response = await axios.request(options);
             setData(response.data.data);
